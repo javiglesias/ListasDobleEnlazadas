@@ -1,12 +1,12 @@
 # depslib dependency file v1.0
-1439239114 source:c:\users\javier\desktop\ejerciciosdani\tad.c
+1439244868 source:c:\users\javier\desktop\ejerciciosdani\tad.c
 	"TAD.h"
 
-1439239316 c:\users\javier\desktop\ejerciciosdani\tad.h
+1439240306 c:\users\javier\desktop\ejerciciosdani\tad.h
 	"stdio.h"
 	"stdlib.h"
 
-1439239203 source:c:\users\javier\desktop\ejerciciosdani\main.c
+1439244900 source:c:\users\javier\desktop\ejerciciosdani\main.c
 	"TAD.h"
 
 1439236620 c:\users\javier\desktop\ejerciciosdani\tad.c

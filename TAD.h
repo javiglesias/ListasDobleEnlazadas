@@ -30,5 +30,5 @@ typedef struct pasajero
 	VOLVER A EMPEZAR CUANDO ESTEMOS BUSCANDO UN PASAJERO, SIMPLEMENTE MOVERSE ADELANTE
 	O ATRÁS.
 */
-} *pasajeros;
+} pasajeros;
 

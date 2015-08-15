@@ -3,8 +3,8 @@
 int main(void)
 {
     int eleccion = 0;
-    pasajeros lista = NULL;
-    char nombre[20], apellido1[20], apellido2[20], destino[6];
+    pasajeros *lista = NULL;
+    char nombre[20] ="\0", apellido1[20], apellido2[20], destino[6];
     while(eleccion != 6)
     {
         printf("\n");

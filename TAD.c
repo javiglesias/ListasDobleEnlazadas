@@ -23,31 +23,51 @@
 	<
 */
 
-int addPasajeros(pasajeros lista, char _nombre[], char _apellido1[],
+int addPasajeros(pasajeros *lista, char _nombre[], char _apellido1[],
 				char _apellido2[], char _destino[], int _statusPago)
 {
-    pasajeros aux;
-	if(lista == NULL)
-	{
+    pasajeros *aux;
 //SI EL PUNTERO A LA LISTA ES NULL SIGNIFICA QUE LA LISTA ESTÁ VACIA Y ESTE ES  EL PRIMER NODO
-		aux = malloc(sizeof(pasajeros));
-		aux = (_nombre,_apellido1,_apellido2,_destino,_statusPago);
-		lista = aux;
-		return 0;
-	}
-	if (lista->sigPasajero == NULL)
-	{
-//SI EL PRIMER PUNTERO AL SIGUEINTE PASAJERO ES NULL, SIGNIFICA QUE LA LISTA ES DE SOLO UN PASAJEROP
-	}
+		if(lista == NULL)
+        {
+            aux =(pasajeros *)malloc(sizeof(pasajeros));
+            if(aux == NULL)
+            {
+                printf("ERROR");
+                return -1;
+            }
+            else
+            {
+                lista = aux;
+                lista->statusPago = 1;
 
-	return -1;
+            }
+        }
+        else
+//SIGNIFICA QUE LA LISTA AL MENOS TIENE 1 NODO CREADO.
+        {
+
+        }
+
+	return 0;
 }
-
-void mostrarPasajeros(pasajeros lista)
+int eliminarPasajeros()
 {
-    printf("%s\n", lista);
     return 0;
 }
+int buscarPasajero()
+{
+    return 0;
+}
+int vaciarLista()
+{
+    return 0;
+}
+void mostrarPasajeros(pasajeros *lista)
+{
+     printf("%d",lista->statusPago);
+}
+
 /*
 	LA LEYENDA DE ERRORES QUE ESTABLEZCO ES LA SIGUIETE:
 		-1: ERROR EN LA FUNCION
